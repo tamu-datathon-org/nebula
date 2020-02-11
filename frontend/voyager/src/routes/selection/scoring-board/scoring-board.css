@@ -1,0 +1,14 @@
+
+.score-block {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+.score-block-heading {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.score-block-tooltip {
+    margin-left: 5px;
+}

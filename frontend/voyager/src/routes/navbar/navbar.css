@@ -1,0 +1,44 @@
+#brand-div {
+    max-width: 30vw;
+    margin-left: 42vw;
+    font-size: 30px;
+    padding: 15px;
+    display:inline-block;
+}
+
+.brand {
+    background: -webkit-linear-gradient(right, #86EACE, #4286F3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: nebulahero 7s infinite linear;
+
+    margin: auto;
+    padding: auto;
+}
+
+@keyframes nebulahero {
+    0% {-webkit-filter: hue-rotate(0deg);}
+    100% {-webkit-filter: hue-rotate(-360deg);}
+}
+
+.navbar-links {
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+    margin-right: 1vw;
+}
+
+.navbar-poweroff {
+    display: inline-block;
+    float: left;
+    margin-top: 15px;
+    margin-left: 1vw;
+}
+
+.navbar-icon {
+    color: black !important;
+}
+
+.navbar-icon:hover {
+    color: #4286F3 !important;
+}

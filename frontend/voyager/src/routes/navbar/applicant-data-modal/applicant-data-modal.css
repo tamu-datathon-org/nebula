@@ -1,0 +1,17 @@
+#applicant-data-modal {
+    cursor: pointer;
+}
+
+#field-choose-text {
+    margin-bottom: 20px;
+}
+
+#download-data-btn-span {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#download-data-btn {
+    background-color:#4286F3;
+}

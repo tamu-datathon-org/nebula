@@ -1,0 +1,18 @@
+#application-info-loading {
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 49.5vw;
+}
+
+.selection-buttons-div{
+}
+
+.selection-button {
+    color: white !important;
+    border: none !important;
+}
+
+.next-button-div {
+    margin-top: 5vh;
+}

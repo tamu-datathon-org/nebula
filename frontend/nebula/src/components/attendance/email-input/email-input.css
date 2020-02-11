@@ -1,0 +1,25 @@
+.qr-code-input {
+  display: inline-block;
+  cursor: pointer;
+  margin: auto;
+}
+
+.qr-code-input > input[type="file"] {
+  display: none;
+}
+
+.qr-code-scan-btn {
+  width: 100px;
+  height: 100px;
+}
+
+#email-input {
+  width: 15em;
+}
+
+#email-input-btn {
+  background-color: #04bea8;
+  border: none;
+  height: 40px;
+  color: white;
+}

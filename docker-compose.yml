@@ -1,0 +1,50 @@
+version: "3.3"
+
+services:
+  voyager-node-react:
+    image: node:11
+    user: root
+    volumes:
+      - ./frontend/voyager:/var/www/voyager
+    working_dir: /var/www/voyager
+    expose:
+      - "3000"
+    ports:
+      - "80:3000"
+    command: /bin/bash -c "npm install -g --no-optional && npm run-script build && node server.js"
+
+  # nebula-react:
+  #   image: node:12.11.1-alpine
+  #   user: root
+  #   volumes:
+  #     - ./frontend/nebula:/var/www/nebula
+  #   working_dir: /var/www/nebula
+  #   expose:
+  #     - "3000"
+  #   ports:
+  #     - "443:3000"
+  #   command: /bin/sh -c "npm install -g --no-optional && npm run-script build && node server.js"
+  
+  voyager-node-server:
+    image: node:12.11.1-alpine
+    user: root
+    volumes:
+      - ./server:/var/server/
+    working_dir: /var/server
+    expose:
+      - "8882"
+    ports:
+      - "8882:8882"
+    command: /bin/sh -c "npm install && node server.js"
+
+  nginx-redirector:
+    image: nginx
+    user: root
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/nebula_redirector.conf
+    working_dir: /
+    expose:
+      - "80"
+    ports:
+      - "80:80"
+    command: /bin/bash -c "envsubst '$${API_LOCATION},$${UI_LOCATION}' < /etc/nginx/conf.d/nebula_redirector.conf > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"

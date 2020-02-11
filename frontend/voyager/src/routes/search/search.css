@@ -1,0 +1,19 @@
+.search-bar-div {
+    margin: auto;
+    width: 50vw;
+    margin-top: 75px;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+.search-results-div {
+    width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.search-result {
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+#applicant-info-div {
+    width: 70vw;
+    margin-left: 5vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+#applicant-info-header {
+    margin-bottom: 20px;
+}
+
+.application-name {
+    display: inline-block;
+}
+
+#application-status-badge {
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#field-selection h4 {
+    margin: auto;
+}
+
+#field-selection {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#field-selection-div {
+    display: none;
+}

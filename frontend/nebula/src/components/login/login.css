@@ -1,0 +1,30 @@
+#mainLogo {
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+    font-size: 15vw;
+    background: -webkit-linear-gradient(right, #86EACE, #4286F3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: nebulahero 7s infinite linear;
+}
+
+@keyframes nebulahero {
+    0% {-webkit-filter: hue-rotate(0deg);}
+    100% {-webkit-filter: hue-rotate(-360deg);}
+}
+
+#loginFrom {
+    margin: auto;
+}
+
+#loginInput {
+    width: 15em;
+    margin-right: 10px;
+}
+
+#loginBtn {
+    background-color: #04BEA8;
+    border: none;
+    height: 40px;
+    color: white;
+}
